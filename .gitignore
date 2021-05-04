@@ -1,0 +1,10 @@
+.git/
+.vs/
+node_modules/
+bin/
+obj/
+
+*.suo
+*.csproj.user
+*.lock.json
+*-lock.json

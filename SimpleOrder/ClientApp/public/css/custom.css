@@ -1,0 +1,87 @@
+.catalog-manage table tbody tr {
+  vertical-align: top; }
+  .catalog-manage table tbody tr td .deleteButton {
+    color: red; }
+
+.catalog {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-column-gap: 2em;
+  grid-row-gap: 2em; }
+  .catalog .size-options {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    width: 100%;
+    text-align: center; }
+    .catalog .size-options img {
+      max-width: 500px; }
+  .catalog .itemName {
+    font-weight: bold; }
+  .catalog .itemImage img {
+    max-width: 40vw; }
+  .catalog .itemOption {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    padding-bottom: 1em;
+    padding-top: 1em;
+    border-top: 1px solid black; }
+    .catalog .itemOption .itemOptionItemNumber {
+      grid-column: 1;
+      grid-row: 1; }
+    .catalog .itemOption .itemOptionPrice {
+      grid-column: 2;
+      grid-row: 1; }
+    .catalog .itemOption .itemOptionName {
+      grid-column: 1;
+      grid-row: 2; }
+    .catalog .itemOption .itemOptionAddToCart {
+      grid-column: 2;
+      grid-row: 2; }
+
+textarea {
+  vertical-align: top; }
+
+.addToCart .numberInput {
+  display: inline-block; }
+  .addToCart .numberInput input {
+    margin-right: 5px; }
+
+.invoiceLineItem, .invoiceLineItemHeader {
+  display: grid;
+  grid-template-columns: 10em auto 5em 5em 5em; }
+
+.itemNumber, .itemNumberHeader, .description, .descriptionHeader {
+  text-align: left; }
+
+.unitPrice, .unitPriceHeader, .quantity, .quantityHeader, .subTotal, .subTotalHeader {
+  text-align: right; }
+
+.itemNumberHeader, .descriptionHeader, .unitPriceHeader, .quantityHeader, .subTotalHeader {
+  font-weight: bold; }
+
+.invoiceSummarySection {
+  display: grid;
+  grid-template-columns: auto 5em;
+  padding-top: 2em; }
+  .invoiceSummarySection label {
+    font-weight: bold;
+    text-align: right; }
+  .invoiceSummarySection span {
+    text-align: right; }
+
+.cart-note {
+  font-size: 0.75em;
+  margin-top: -0.75em;
+  margin-left: 0.25em; }
+
+.cart {
+  display: grid;
+  grid-template-columns: 2fr 1fr; }
+  .cart .cartInvoiceSection {
+    padding: 1em; }
+  .cart .cartCustomerInfoSection {
+    padding: 1em; }
+
+.customerInformation .textInput .label {
+  width: 10em; }
